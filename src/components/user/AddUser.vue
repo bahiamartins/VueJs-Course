@@ -62,7 +62,7 @@ export default {
       
       axios.post('http://127.0.0.1:3000/api/users/create/', data, 
         {
-          headers: { Authorization: 'Token e49df3f06c060e10a8b7154f16a88cefebc35da1' }
+          headers: { Authorization: 'Token 6cba58d2056d1ed9257a1c1591e4f50b70f4d4fe' }
         }
       ).then((response) => {
         // enviando dados para outros components
