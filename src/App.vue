@@ -1,20 +1,28 @@
 <template>
   <div id="app">
     <h1>CRUD Users</h1>
-    <hr>
+    <br><br>
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
-    <User/>
-
+    <div class="row justify-content-md-center">
+      <div class="col-md-4">
+        <AddUser />
+      </div>
+      <div class="col-md-7">
+        <UserList />
+      </div>
+    </div><!-- row -->
   </div>
 </template>
 
 <script>
-import User from './components/User.vue'
+import AddUser from './components/user/AddUser.vue'
+import UserList from './components/user/UserList.vue'
 
 export default {
   name: 'app',
   components: {
-    User
+    UserList,
+    AddUser
   }
 }
 
