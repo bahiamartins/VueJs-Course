@@ -51,7 +51,6 @@ export default {
     // recebendo dados de outros componentes
     eventBus.$on('submit', function(response) {
       console.log(response);
-      // dando erro de push is not a function
       vm.users.push(response);
     })
   },
