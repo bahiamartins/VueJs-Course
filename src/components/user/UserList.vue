@@ -51,7 +51,7 @@ export default {
     // recebendo dados de outros componentes
     eventBus.$on('submit', function(response) {
       console.log(response);
-      vm.users.push(response);
+      vm.users.results.push(response);
     })
   },
   methods: {
